@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block body %}
+{{order}}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Upload a file</label>
+    <input type="file" name="file">
+    <p>csv files only</p>
+    <button type="submit">upload</button>
+</form>
+{% endblock %}

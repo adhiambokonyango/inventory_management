@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>Logged out!</h2>
+
+    <div class="border-top pt-3">
+        <small class="text-muted">
+           <a href="{% url 'login' %}">Log in Again</a>
+            <br>
+            Need an account? <a class="ml-2" href="{% url 'register' %}">Sign Up Here</a>
+        </small>
+    </div>
+
+{% endblock %}

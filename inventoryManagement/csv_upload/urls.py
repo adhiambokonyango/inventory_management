@@ -1,0 +1,1 @@
+url(r'^upload/csv/$', views.upload_csv, name='upload_csv'),
